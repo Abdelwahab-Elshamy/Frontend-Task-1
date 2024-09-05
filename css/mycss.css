@@ -56,20 +56,35 @@ ul {
   text-align: center;
   color: var(--second-color);
 }
+
 .landing .box .text h3:nth-child(2) {
   font-size: 20px;
   padding-bottom: 15px;
 }
+@media(max-width:424px){
+  .landing .box .text h3:nth-child(2) {
+    font-size: 15px;
+  }
+}
 .landing .box .text h3:nth-child(3) {
   font-size: 62px;
-
   padding-bottom: 15px;
+}
+@media(max-width:424px){
+  .landing .box .text h3:nth-child(3) {
+    font-size: 20px;
+  }
 }
 .landing .box .text h3:nth-child(4) {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 1px;
+}
+@media(max-width:424px){
+  .landing .box .text h3:nth-child(4) {
+    font-size: 11px;
+  }
 }
 .landing .box .text .fa-angle-left {
   position: absolute;
@@ -110,9 +125,20 @@ ul {
   border-radius: 18px;
   font-size: 15px;
   position: absolute;
-  left: 50%;
-  bottom: 199px;
+  left: 48%;
+  bottom:60px;
   transform: translateX(-50%);
+}
+@media(max-width:776px){
+  .landing .btn-lg {
+    bottom: 45px;
+  }
+}
+@media(max-width:424px){
+  .landing .btn-lg {
+    font-size: 10px;
+    bottom:30px;
+  }
 }
 /* End landing  */
 /* Start content  */
@@ -139,6 +165,12 @@ ul {
 .content .text .text-two {
   font-size: 52px;
 }
+@media(max-width:424px){
+  .content .text .text-two {
+    font-size: 20px;
+  
+  }
+}
 
 .content .text .text-three {
   font-size: 18px;
@@ -146,6 +178,12 @@ ul {
   color: #dddada;
   line-height: 1.5;
   letter-spacing: 1px;
+}
+@media(max-width:424px){
+  .content .text .text-three  {
+    font-size: 10px;
+  
+  }
 }
 /* end content  */
 /* start Features */
@@ -165,6 +203,11 @@ ul {
   top: 25%;
   height: 375px;
 }
+@media(max-width:776px){
+  .features .imgs img  {
+  display: none;
+  }
+}
 .features .container {
   padding-top: 150px;
 }
@@ -175,13 +218,31 @@ ul {
 .features .row .box-text h3 {
   font-size: 38px;
 }
+@media(max-width:424px){
+  .features .row .box-text h3  {
+    font-size: 18px;
+  
+  }
+}
 .features .row .box-text p {
   font-size: 18px;
   font-weight: 300;
 }
+@media(max-width:424px){
+  .features .row .box-text p  {
+    font-size: 11px;
+  
+  }
+}
 .features .row .box .box-one i {
   font-size: 28px;
   padding-bottom: 15px;
+}
+@media(max-width:424px){
+  .features .row .box .box-one i  {
+    font-size: 18px;
+  
+  }
 }
 .features .row .box .box-one .para-one {
   text-transform: uppercase;
@@ -221,6 +282,80 @@ ul {
   min-height: 75vh;
   z-index: -2;
 }
+.form .box-form {
+  width: 100%;
+  height: 480px;
+  border-radius: 10px;
+  background-color: var(--second-color);
+}
+.form .text h3 {
+  color: var(--second-color);
+  padding: 30px 30px 0;
+}
+
+.form .text p {
+  color: var(--second-color);
+  padding: 30px 30px 0;
+}
+.form .box-form .btn-box {
+  display: flex;
+  gap: 90px;
+  padding: 10px;
+  justify-content: center;
+  border-bottom: 1px solid rgba(121, 118, 118, 0.397);
+}
+.form .box-form .btn-box button {
+  background-color: transparent;
+  color: rgb(114, 113, 113);
+  text-transform: uppercase;
+}
+
+.form .box-form .btn-box .btn-one {
+  color: #1e0e62;
+  position: relative;
+}
+.form .box-form .btn-box .btn-one::before {
+  content: "";
+  position: absolute;
+  width: 241%;
+  background-color: var(--main-color);
+  height: 2px;
+  bottom: -12px;
+  left: -67px;
+}
+.form .main-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form .form-group .form-control {
+  border-radius: 25px;
+  width: 250px;
+}
+.form .form-group input::placeholder {
+  font-size: 14px;
+}
+.form .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+.form .buttons .btn {
+  background-color: #25dac5;
+  color: var(--second-color);
+  border-radius: 25px;
+  padding: 10px 25px;
+}
+.form .buttons .btn-outline-info {
+  background-color: #1da1f2;
+  color: var(--second-color);
+  border-radius: 25px;
+  padding: 10px 30px;
+}
+.form .buttons p {
+  color: rgb(131, 129, 129);
+}
 /* End Form  */
 /* Start Testimonial */
 .testimonial {
@@ -244,9 +379,21 @@ ul {
   letter-spacing: 1px;
   font-weight: 300;
 }
+@media(max-width:424px){
+  .testimonial .cardd .text-card h3  {
+    font-size: 10px;
+  
+  }
+}
 .testimonial .cardd .text-card p {
   color: rgb(129, 128, 128);
   text-transform: uppercase;
+}
+@media(max-width:424px){
+  .testimonial .cardd .text-card p {
+    font-size: 12px;
+  
+  }
 }
 .testimonial .cardd img {
   width: 80px;
@@ -364,6 +511,82 @@ ul {
   gap: 30px;
 }
 /* end team  */
+/* start contact */
+.contact{
+  background-image: url("../imgs/contact\ background.jfif");
+  background-size: cover;
+  background-color: rgb(14, 13, 13);
+  position: relative;
+  min-height: 75vh;
+  z-index: -2;
+}
+.contact .container {
+  padding-top: 160px;
+  color: var(--second-color);
+}
+.contact .col-6 h3 {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+@media(max-width:424px){
+  .contact .col-6 h3 {
+    font-size: 22px;
+  
+  }
+}
+.contact .col-6 .para-one{
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+@media(max-width:424px){
+  .contact .col-6 .para-one {
+    font-size: 10px;
+  
+  }
+}
+.contact .icons{
+  display: flex;
+  gap: 20px;
+}
+@media(max-width:424px){
+  .contact .icons p {
+    font-size: 10px;
+  
+  }
+   .contact .icons i{
+    font-size: 10px;
+
+  }
+}
+
+.contact .card {
+  background-color: #f1faee;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact label {
+  font-weight: bold;
+  color: #1d3557;
+ 
+}
+
+.contact  input::placeholder, textarea::placeholder {
+  color: #a8dadc;
+}
+
+.contact  button {
+  background-color: #06d6a0;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.contact button:hover {
+  background-color: #05c489;
+}
+/* end contact */
 /* start Pricing Table */
 .pricing-taple {
   background-image: url("../imgs/Pricing\ Table\ background.jfif");
@@ -372,6 +595,7 @@ ul {
   position: relative;
   min-height: 75vh;
   z-index: -2;
+  padding-bottom: 30px;
 }
 .pricing-taple .container {
   padding-top: 80px;
@@ -388,7 +612,7 @@ ul {
 }
 .pricing-taple .box {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
 }
 .pricing-taple .box .box-one {
@@ -452,3 +676,23 @@ ul {
   border: none;
 }
 /* end Pricing Table */
+/* start footer  */
+footer {
+  background-color: #2f1893;
+  padding-top: 20px;
+  color: var(--second-color);
+}
+footer span {
+  font-size: 30px;
+}
+footer a {
+  color: var(--second-color);
+}
+footer a:hover {
+  
+  text-decoration: none;
+}
+footer .footer-email {
+  font-size: 16px;
+}
+/* end footer  */
